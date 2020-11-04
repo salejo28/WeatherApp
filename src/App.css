@@ -1,5 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Jomolhari&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Jomolhari', serif;
+    background: #eee;
+	background: linear-gradient(0deg, rgba(0, 0, 200, 0.2) , rgba(0, 0, 200, 0) );
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	margin: 0;
+	padding: 20px;
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+	position: relative;
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        height: 100vh;
+    }
 }

@@ -1,0 +1,135 @@
+.card {
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, .5);
+    background: transparent;
+}
+
+.card .card_title {
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.card .card_info {
+    margin: 15px 0;
+    display: flex;
+    font-size: 15px;
+    font-weight: 100;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card .card_info .weather {
+    display: flex;
+}
+
+.card .card_info .weather h2 {
+    font-weight: 200;
+    color: #5e5e5e;
+}
+
+.card .card_info .right {
+    text-align: right;
+}
+
+.card .card_info .right .date {
+    margin: 4px 0;
+}
+
+.card .card_info .right .date span {
+    color: #888;
+}
+
+.card .details .description {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.card .details .description h4 {
+    text-transform: uppercase;
+    color: #888;
+    font-weight: 400;
+}
+
+.card .details .sub_card {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.card .details .sub_card .des {
+    width: 33.3%;
+    display: block;
+    padding: 0 5px;
+}
+
+.card .details .sub_card .des small {
+    top: -12px;
+    font-size: 11px;
+    color: #888;
+}
+
+.card .details .sub_card .des h2 {
+    font-size: 15px;
+    font-weight: 100;
+    color: #4b4b4b;
+}
+
+/* Forecast */
+
+.card .details .forecast {
+    width: 100%;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.card .details .forecast h4 {
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ccc;
+    font-weight: 400;
+    color: #888;
+}
+
+.card .details .forecast .days {
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.card .details .forecast .days .day {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    transition: all .5s;
+}
+
+.card .details .forecast .days .day:hover {
+    background: rgba(0, 0, 0, .2);
+}
+
+.card .details .forecast .days .day .weather {
+    display: flex;
+}
+
+.card .details .forecast .days .day .weather h2 {
+    font-weight: 200;
+    color: #5e5e5e;
+}
+
+.card .details .forecast .days .day .date span {
+    color: #888;
+}
+
+@media screen and (min-width: 900px) {
+    .card {
+        width: 400px;
+    }
+}
